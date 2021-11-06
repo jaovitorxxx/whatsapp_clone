@@ -2,6 +2,7 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:whatsapp_clone/Pages/callpage.dart';
 import 'package:whatsapp_clone/Pages/chatpage.dart';
 import 'package:whatsapp_clone/Pages/statuspage.dart';
 
@@ -55,10 +56,10 @@ class MyApp extends StatelessWidget {
               ),
               body: const TabBarView(
                 children: [
-                  Text("Camera"),
+                  Text(""),
                   ChatPage(),
                   StatusPage(),
-                  Text("Chmadas"),
+                  CallPage(),
                 ],
               ),
             )));

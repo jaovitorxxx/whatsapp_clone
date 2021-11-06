@@ -5,268 +5,173 @@
 
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 // ignore: camel_case_types
 class customcard extends StatelessWidget {
   const customcard({Key? key}) : super(key: key);
 
+  get divider => null;
+
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
-    return ListTile(
-        // ignore: prefer_const_constructors
-        leading: CircleAvatar(radius: 30, backgroundColor: Colors.green),
-        title: const Text(
-          "Math",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        trailing: const Text("23:14"),
-        subtitle: Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Icon(Icons.done_all),
-            const SizedBox(
-              width: 3,
-            ),
-            const Text(
-              "Oiii jkkkkkkkkkkkkk",
-              style: TextStyle(
-                fontSize: 13,
+
+    return Column(
+      children: [
+        ListTile(
+
+            // ignore: prefer_const_constructors
+            leading: CircleAvatar(
+              radius: 30,
+              child: SvgPicture.asset(
+                "/images/group.svg",
+                color: Colors.white,
+                width: 37,
+                height: 37,
               ),
-            )
-          ],
-        ));
+              backgroundColor: Colors.blueGrey,
+            ),
+            title: const Text(
+              "Grupo da Familía",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            trailing: const Text("23:14"),
+            subtitle: Row(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: [
+                const Icon(Icons.done_all),
+                const SizedBox(
+                  width: 3,
+                ),
+                const Text(
+                  "Oiii jkkkkkkkkkkkkk",
+                  style: TextStyle(
+                    fontSize: 13,
+                  ),
+                )
+              ],
+            )),
+        const Divider(
+          thickness: 1,
+        )
+      ],
+    );
   }
 }
 
 // ignore: camel_case_types
-class customcardone extends StatelessWidget {
-  const customcardone({Key? key}) : super(key: key);
+
+// ignore: camel_case_types
+class cardtwo extends StatelessWidget {
+  const cardtwo({Key? key}) : super(key: key);
+
+  get divider => null;
 
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
-    return ListTile(
-        // ignore: prefer_const_constructors
-        leading: CircleAvatar(radius: 30, backgroundColor: HexColor("#da3287")),
-        title: const Text(
-          "Paul",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        trailing: const Text("23:14"),
-        subtitle: Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            Icon(
-              Icons.done_all,
-              color: HexColor("#34b7f1"),
-            ),
-            const SizedBox(
-              width: 3,
-            ),
-            const Text(
-              "Saiu para entrega viu!",
-              style: TextStyle(
-                fontSize: 13,
+
+    return Column(
+      children: [
+        ListTile(
+
+            // ignore: prefer_const_constructors
+            leading: CircleAvatar(
+              radius: 30,
+              child: SvgPicture.asset(
+                "/images/person.svg",
+                color: Colors.white,
+                width: 49,
+                height: 48,
               ),
-            )
-          ],
-        ));
+              backgroundColor: Colors.blueGrey,
+            ),
+            title: const Text(
+              "Mãe",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            trailing: const Text("23:14"),
+            subtitle: Row(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: [
+                const Icon(Icons.done_all),
+                const SizedBox(
+                  width: 3,
+                ),
+                const Text(
+                  "Vai pra casa, já está tarde!",
+                  style: TextStyle(
+                    fontSize: 13,
+                  ),
+                )
+              ],
+            )),
+        const Divider(
+          thickness: 1,
+        )
+      ],
+    );
   }
 }
 
 // ignore: camel_case_types
-class customcard2 extends StatelessWidget {
-  const customcard2({Key? key}) : super(key: key);
+class cardtree extends StatelessWidget {
+  const cardtree({Key? key}) : super(key: key);
+
+  get divider => null;
 
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
-    return ListTile(
-        // ignore: prefer_const_constructors
-        leading: CircleAvatar(
-          radius: 30,
-          backgroundColor: HexColor("#caff70"),
-        ),
-        title: const Text(
-          "John",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        trailing: const Text("1:14"),
-        subtitle: Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Icon(Icons.done_all),
-            const SizedBox(
-              width: 3,
-            ),
-            const Text(
-              "Beatles the better band lol",
-              style: TextStyle(
-                fontSize: 13,
+
+    return Column(
+      children: [
+        ListTile(
+
+            // ignore: prefer_const_constructors
+            leading: CircleAvatar(
+              radius: 30,
+              child: SvgPicture.asset(
+                "/images/cow.svg",
+                width: 49,
+                height: 48,
               ),
-            )
-          ],
-        ));
-  }
-}
-
-// ignore: camel_case_types
-class customcard3 extends StatelessWidget {
-  const customcard3({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
-    return ListTile(
-        // ignore: prefer_const_constructors
-        leading: CircleAvatar(
-          radius: 30,
-          backgroundColor: HexColor("#68228b"),
-        ),
-        title: const Text(
-          "Ringo",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        trailing: const Text("00:29"),
-        subtitle: Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Icon(Icons.done_all),
-            const SizedBox(
-              width: 3,
+              backgroundColor: Colors.transparent,
             ),
-            const Text(
-              "Me passa a lista de compras",
+            title: const Text(
+              "Amigão",
               style: TextStyle(
-                fontSize: 13,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
               ),
-            )
-          ],
-        ));
-  }
-}
-
-// ignore: camel_case_types
-class customcard4 extends StatelessWidget {
-  const customcard4({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
-    return ListTile(
-        // ignore: prefer_const_constructors
-        leading: CircleAvatar(
-          radius: 30,
-        ),
-        title: const Text(
-          "Mariana",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        trailing: const Text("13:20"),
-        subtitle: Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Icon(Icons.done_all),
-            const SizedBox(
-              width: 3,
             ),
-            const Text(
-              "Blz, te encontro lá",
-              style: TextStyle(
-                fontSize: 13,
-              ),
-            )
-          ],
-        ));
-  }
-}
-
-class customcard5 extends StatelessWidget {
-  const customcard5({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
-    return ListTile(
-        // ignore: prefer_const_constructors
-        leading: CircleAvatar(
-          radius: 30,
-        ),
-        title: const Text(
-          "Paul",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        trailing: const Text("23:14"),
-        subtitle: Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Icon(Icons.done_all),
-            const SizedBox(
-              width: 3,
-            ),
-            const Text(
-              "Oiii jkkkkkkkkkkkkk",
-              style: TextStyle(
-                fontSize: 13,
-              ),
-            )
-          ],
-        ));
-  }
-}
-
-class customcard6 extends StatelessWidget {
-  const customcard6({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
-    return ListTile(
-        // ignore: prefer_const_constructors
-        leading: CircleAvatar(
-          radius: 30,
-        ),
-        title: const Text(
-          "Paul",
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        trailing: const Text("23:14"),
-        subtitle: Row(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Icon(Icons.done_all),
-            const SizedBox(
-              width: 3,
-            ),
-            const Text(
-              "Oiii jkkkkkkkkkkkkk",
-              style: TextStyle(
-                fontSize: 13,
-              ),
-            )
-          ],
-        ));
+            trailing: const Text("23:14"),
+            subtitle: Row(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: [
+                const Icon(Icons.done_all),
+                const SizedBox(
+                  width: 3,
+                ),
+                const Text(
+                  "Vou beber todas hoje em",
+                  style: TextStyle(
+                    fontSize: 13,
+                  ),
+                )
+              ],
+            )),
+        const Divider(
+          thickness: 1,
+        )
+      ],
+    );
   }
 }
